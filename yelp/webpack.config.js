@@ -5,3 +5,14 @@ const path = require ('path'),
 	resolve = path.resolve;
 
 const getConfig = require ('hjs-webpack');
+
+var config = getConfig({
+	in: join(_dirname, 'src/app.js'),
+	out: join(_dirname, 'dist')
+})
+
+var congi = getConfig({
+	in: join(_dirname, 'src/app.js'),
+	out: join(_dirname, 'dist'),
+	clearBeforeBuild: true
+})
