@@ -6,3 +6,6 @@ const App = React.createClass({
 		return (<div>Text, text, and more text</div>);
 	}
 });
+
+const mountNode = document.querySelector('#root');
+ReactDOM.render(<app />, mountNode);
